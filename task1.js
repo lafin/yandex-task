@@ -14,9 +14,8 @@ var urlParser = (function () {
             url = _url;
             return this;
         },
-
         parse: function () {
-            var protocolPoint, protocol, bodyPoint, body, authPoint, auth, hostPoint, host, pathPoint, pathBody, path, hash, pathname, query;
+            var protocolPoint, protocol, bodyPoint, body, authPoint, auth, hostPoint, host, pathPoint, pathBody, path, hash, pathname, query, prepareHost, hostname, port;
             protocolPoint = url.indexOf('://');
             protocol = url.substring(0, protocolPoint);
 
