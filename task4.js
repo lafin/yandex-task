@@ -18,7 +18,7 @@ var slideShow = function (el, search) {
         var collect = [];
         $.ajax({
             type: 'GET',
-            url: 'http://api.flickr.com/services/rest/?method=flickr.photos.search&per_page=100&format=json&nojsoncallback=1',
+            url: 'https://api.flickr.com/services/rest/?method=flickr.photos.search&per_page=100&format=json&nojsoncallback=1',
             data: {
                 api_key: '7ea5f7d926eb81fa86e008de05ef627e',
                 tags: search
